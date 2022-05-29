@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.containerCuerpo{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+/* -----------header-------------- */
+.icono{
+    margin-top: 20px;
+    margin-left: 50px;
+    height: 70px;
+   
+}
+
+
+.cabecera{
+    /* position: fixed;
+   z-index: 1000;
+   top: 0; */
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: #0174DF;
+   margin-bottom: 20px;
+
+   
+}
+.navegacion{
+    display: flex;
+    padding: 5px;
+   /*  margin: 0px 20px; */
+   margin-right: 300px;
+
+   align-items: center;
+/*    min-width: 13vw; */
+   justify-content: space-between;
+    color: #fff;
+}
+.navegacion a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+}
+.navegacion a:hover{
+    text-decoration: underline;
+}
+
+.inicio{
+    width: 105px;
+    height: 25px;
+    text-align: center;
+    line-height: 23px;
+}
+.nosotros{
+    width: 105px;
+    height: 25px;
+    text-align: center;
+    line-height: 23px;
+}
+.contacto{
+ width: 105px;
+ height: 25px;
+ text-align: center;
+ line-height: 23px;
+}
+.borde{
+    margin: 0px 40px;
+}
+.borde:hover{
+    
+    border-radius: 4px;
+    background-color: #87aed3;
+}
+/* --------------------main---------------------- */
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+   
+}
+
+.tituloApiacere{
+    text-align: center;
+    text-shadow: 2px 2px 2px blue;
+font-family: 'Satisfy', cursive;
+font-size: 36px;
+margin: 10px;
+}
+/*-----  carrousel----- */
+.carrousel{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrousel ul{
+    padding: 0;
+    display: flex;
+    width: 200%;
+    
+
+    animation: cambio 20S infinite;
+}
+.carrousel li{
+    width: 100%;
+    list-style: none;
+}
+.carrousel img{
+  
+    width: 100%;
+    height: 450px;
+}
+@keyframes cambio {
+0% {margin-left: 0;}
+20% {margin-left: 0;}
+
+25% {margin-left: -100%;}
+45% {margin-left: -100%;}
+
+}
+/*----- productos------- */
+
+.productos{
+    display: flex;
+    flex-direction: row;
+}
+.titleProductos{
+    text-align: center;
+    font-size: 35px;
+    color: #EC7063;
+    margin: 20px 0px;
+}
+.cajaProductos{
+   /*  height: 250px;
+    margin-top: 10px; */
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 6px;
+    text-align: center;
+   
+}
+.textoProductos{
+    width: 670px; 
+    height: 400px;
+    padding: 10px;
+    background-color: #FBFCFC;
+}
+.textoProductos p{
+    font-family: 'Roboto', sans-serif;;
+    font-size: 25px;
+    color: gray;
+}
+.imagenProductos{
+    width: 670px; 
+    height: 400px;
+    padding-top: 20px;
+    background-color: #FBFCFC;
+}
+
+.imgProductos{
+    width: 540px; 
+    height: 380px;
+}
+h4{
+    padding-top: 170px;
+    font-size: 30px;
+    color: blue;
+}
+
+
+/* ----nosotros------ */
+.sobreNosotros{
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+   
+    border-radius: 6px;
+    text-align: center;
+    
+}
+.sobreNosotros h3{
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 35px;
+    color: #EC7063;
+}
+.texto{
+    width: 670px; 
+    height: 400px;
+    padding: 10px;
+    background-color: #FBFCFC;
+
+}
+.imagePan{
+    width: 670px; 
+    height: 400px;
+    padding-top: 20px;
+    background-color: #FBFCFC;
+   
+}
+.panImg{
+    width: 540px; 
+    height: 380px;
+}
+.sobreNosotros p{
+    text-align: justify;
+}
+
+/* -----carrouselNosotros */
+.carrouselNosotros{
+    /* width: 70%; */
+    width: 540px;
+    height: 380px;
+    margin: auto;
+    overflow: hidden;
+}
+.carrouselNosotros ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    
+
+    animation: cambioNosotros 20S infinite alternate linear;
+   
+}
+.carrouselNosotros li{
+    width: 100%;
+    list-style: none;
+}
+.carrouselNosotros img{
+  
+    width: 100%;
+    height: 450px;
+}
+@keyframes cambioNosotros {
+0% {margin-left: 0;}
+20% {margin-left: 0;}
+
+25% {margin-left: -100%;}
+45% {margin-left: -100%;}
+
+50% {margin-left: -200%;}
+70% {margin-left: -200%;}
+
+75% {margin-left: -300%;}
+100% {margin-left: -300%;}
+
+}
+/* -----contacto---- */
+.infocontacto{
+    display: flex;
+ /*    flex-direction: column; */
+ /* flex-direction: inherit; */
+   /*  align-items: center; */
+    justify-content: space-around;
+    width: 100%;
+   margin-bottom: 20px;
+    
+}
+.mapa{
+display: flex;
+padding-left: 10px;
+    width: 50%;
+    background-color: #FBFCFC;
+
+}
+
+.datosContacto{
+    display: flex;
+    justify-content: center;
+    /*align-items: center; */
+    
+    padding: 35px;
+    text-align: center;
+    background-color: #FBFCFC;
+    border-radius: 6px;
+}
+.contact{
+    font-size: 40px;
+    color: #EC7063;
+}
+
+
+
+
+
+
+
+/* ----------------------footer----------------- */
+
+.piePagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+   /*  position: absolute;
+    bottom: 0; */
+    width: 100%;
+    height: 200px;
+    color: white;
+    font-size: 14px;
+
+}
+.title{
+    display: flex;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.linea{
+    width: 250px;
+    margin-bottom: 5px;
+   
+}
+.visita{
+    font-size: 15px;
+ 
+}
+.visita p{
+    margin-left: 25px;
+}
+
+.containerFoo{
+display: flex;
+justify-content: space-between;
+}
+.contRedes{
+    margin-right: 15px;
+}
+.rSociales{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    list-style: none;
+
+}
+.rSociales li{
+    margin: 10px;
+}
+.rSociales li a{
+    color: #fff;
+}
+.copy{
+    margin-left: 15px;
+  
+}
